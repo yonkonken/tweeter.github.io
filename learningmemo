@@ -1,0 +1,30 @@
+#Ruby on Rails学習用のメモです。
+
+・コマンド類
+rails generate (アプリケーション名) //Railsアプリケーションの作成
+rails server //サーバーの起動
+rails controller (コントローラ名) (アクション名) //コントローラの作成 同じコントローラで違うアクション/ビューを作る場合は、コマンドを使わずファイルを作成する
+rails console //コンソールの起動
+
+・仕組み
+//ページの表示には主にview,controller,routeの3つが使用される
+//ページの表示は　ブラウザの要求→route→controller→view　の順
+
+//view　HTML+CSSで書かれる　見た目の部分
+//controller 'アクション'を提供する。コントローラと同じ名前のビューフォルダから、アクションと同じ名前のviewファイルを探してブラウザに返す
+             home/top → homeコントローラのtopアクションに対応するviewファイルを探す
+//route ブラウザとコントローラを繋ぐ役割。ブラウザでURLを入力すると、routeがURLを見て、適切なコントローラのアクションを呼び出す
+
+・view周り
+//app/assets/stylesheetsにCSSファイルが有る
+//publicに画像を入れる /(ファイル名)で指定できる
+
+・controller周り
+
+・route周り
+//config/routes.rb　で定義される
+//get "URL" => "コントローラー名#アクション名"　で書かれる
+  例：get "top" => "home#top"  URL:localhost/3000/topでhome#topの内容を表示する
+//localhost:3000でアクセスさせる時は、URL部分を"/"とする
+
+・データベース周り
