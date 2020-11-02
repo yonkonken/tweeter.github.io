@@ -1,4 +1,5 @@
-# twwter.githyb.io
+# tweeter.github.io
 # 2020 11/02
-# TwitterのようなWebアプリです。
-# Ruby on Railsの演習として製作しています。
+
+TwitterのようなWebアプリです。
+Ruby on Railsの演習として製作しています。
